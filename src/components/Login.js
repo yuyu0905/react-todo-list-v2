@@ -21,7 +21,7 @@ function Login() {
         })
         .catch( (error) => { 
             console.log(error.response);
-            Swal.fire(error.response?.data?.message, error.response?.data?.error, 'error');
+            Swal.fire(error.response.data?.error, '', 'error');
         });
     }
 

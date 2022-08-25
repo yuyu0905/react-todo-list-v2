@@ -4,6 +4,10 @@ const API_URL = "https://todoo.5xcamp.us/users";
 // 使用者登入
 export const signIn = ( data ) => {
   return axios({
+    headers: { 
+      Accept: 'application/json',
+      'Content-Type': 'application/json', 
+    },
     method: 'post',
     url: API_URL + "/sign_in",
     data: data
